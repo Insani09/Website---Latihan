@@ -48,8 +48,13 @@
                 </div>
             </div>
 
-            <div class="btn__share">
-                <i class="uil uil-share-alt social__share"></i>
+            <div class="btn__controls">
+                <button class="btn__control-item" title="Bagikan">
+                    <i class="uil uil-share-alt"></i>
+                </button>
+                <button id="theme-toggle" class="btn__control-item" title="Mode Gelap/Terang">
+                    <i class="uil uil-moon theme__icon"></i>
+                </button>
             </div>
         </nav>
     </aside>
@@ -83,36 +88,6 @@
                     <a href="#about" class="button"><i class="uil uil-user button__icon" ></i>
                     More About Me</a>
                 </div>
-
-                <div class="my__info">
-                    <div class="info__item">
-                        <i class="uil uil-facebook-messenger info__icon"></i>
-
-                        <div>
-                            <h3 class="info__tittle">Messenger</h3>
-                            <span class="info__subtittle">etherealsani_</span>
-                        </div>
-                    </div>
-
-                    <div class="info__item">
-                        <i class="uil uil-whatsapp info__icon"></i>
-
-                        <div>
-                            <h3 class="info__tittle">WhatsApp</h3>
-                            <span class="info__subtittle">+62-8133-6350-277</span>
-                        </div>
-                </div>
-                
-                     <div class="info__item">
-                        <i class="uil uil-envelope-edit info__icon"></i>
-
-                        <div>
-                            <h3 class="info__tittle">Email</h3>
-                            <span class="info__subtittle">insaniauraramadhani@gmail.com</span>
-                        </div>
-                    </div>
-
-                
             </div>
         </section>
     <!--About-->
@@ -364,34 +339,35 @@
         </section>
     <!--WORK-->
     <section class="work section" id="work">
-         <h2 data-heading="Proyek" class="section__tittle">Website & Design</h2>
+         <h2 data-heading="Proyek" class="section__tittle">Website & Program</h2>
 
         <div class="work__filters">
-        
-            <span class="work__item" data-filter="Design"> </span>
+            <span class="work__item active-work" data-filter="*">Semua</span>
+            <span class="work__item" data-filter="design">Design</span>
+            <span class="work__item" data-filter="program">Program</span>
         </div>
 
         <div class="work__container container grid">
-            <div class="work__card mix web">
+            <div class="work__card mix design">
                 <img src="/SS HOCUS FOCUS.png" alt="" class="work__img">
                 <h3 class="work__tittle">SCRATCH</h3>
                 <span class="work__button"> 
                     <p class="details__description">Proyek pertama yang dilakukan ketika kelas sepuluh yaitu membuat progaram sederhana menggunakan scratch.</p>
                 </span>
                 <div class="portofolio__item-details">
-                    <h3 class="details__tittle"></h3>
-                    <p class="details__description">Proyek pertama yang dilakukan ketika kelas sepuluh yaitu membuat progaram sederhana menggunakan scratch.</p>
+                    <h3 class="details__tittle">Scratch Programming</h3>
+                    <p class="details__description">Proyek pertama saya di kelas 10 menggunakan Scratch, sebuah platform visual programming yang intuitif. Saya membuat program sederhana untuk memahami konsep dasar algoritma dan logika pemrograman dengan antarmuka yang user-friendly.</p>
                     <ul class="details__info">
-                        <li>Language - <span>Html, Css, JavaScript</span></li>
-                        <li> @ - <span>Pinterest</span></li>
-                        <li>View - <span><a href="https://id.pinterest.com/pin/119415827617722479/">www.work1.com</a></span></li>
+                        <li>Tipe - <span>Visual Programming</span></li>
+                        <li>Platform - <span>Scratch</span></li>
+                        <li>Link - <span><a href="https://id.pinterest.com/pin/119415827617722479/" target="_blank">Lihat Proyek</a></span></li>
                     </ul>
                 </div>
 
                 
             </div>
 
-             <div class="work__card mix design">
+             <div class="work__card mix program">
                 <img src="/Screenshot 2025-03-16 040203.png" alt="" class="work__img">
                 <h3 class="work__tittle">C++</h3>
                 
@@ -399,19 +375,19 @@
                     <p class="details__description">Proyek kedua yang dilakukan ketika kelas sepuluh yaitu membuat progaram sederhana menggunakan C++.</p>
                 </span>
                 <div class="portofolio__item-details">
-                    <h3 class="details__tittle"></h3>
-                    <p class="details__description">Proyek kedua yang dilakukan ketika kelas sepuluh yaitu membuat progaram sederhana menggunakan C++.</p>
+                    <h3 class="details__tittle">C++ Programming</h3>
+                    <p class="details__description">Proyek kedua menggunakan C++, salah satu bahasa pemrograman paling powerful. Saya membuat program sederhana untuk belajar konsep Object-Oriented Programming dan pemahaman mendalam tentang struktur data dan algoritma kompetitif.</p>
                     <ul class="details__info">
-                        <li>Language <span>Html, Css, JavaScript</span></li>
-                        <li> @ - <span>Pinterest</span></li>
-                        <li>View - <span><a href="https://id.pinterest.com/pin/703756188236766/">www.work2.com</a></span></li>
+                        <li>Bahasa - <span>C++</span></li>
+                        <li>Fokus - <span>OOP & Algoritma</span></li>
+                        <li>Link - <span><a href="https://id.pinterest.com/pin/703756188236766/" target="_blank">Lihat Proyek</a></span></li>
                     </ul>
                 </div>
 
                 
             </div>
 
-             <div class="work__card mix web">
+             <div class="work__card mix program">
                 <img src="/SS PHY.png" alt="" class="work__img">
                 <h3 class="work__tittle">Phyton</h3>
                 <span class="work__button"> 
@@ -419,12 +395,12 @@
                     
                 </span>
                 <div class="portofolio__item-details">
-                    <h3 class="details__tittle"></h3>
-                    <p class="details__description">Proyek ketiga yang dilakukan ketika kelas sepuluh yaitu membuat progaram sederhana menggunakan Phyton.</p>
+                    <h3 class="details__tittle">Python Development</h3>
+                    <p class="details__description">Proyek ketiga menggunakan Python, bahasa yang elegan dan versatile. Saya mengembangkan program untuk memahami konsep scripting, automation, dan problem-solving dengan syntax yang clean dan readable serta kemampuan untuk berbagai aplikasi.</p>
                     <ul class="details__info">
-                        <li>Language <span>Html, Css</span></li>
-                        <li> @ - <span>Pinterest</span></li>
-                        <li>View - <span><a href="https://id.pinterest.com/pin/1138707087033828660/">www.work3.com</a></span></li>
+                        <li>Bahasa - <span>Python 3</span></li>
+                        <li>Fokus - <span>Scripting & Automation</span></li>
+                        <li>Link - <span><a href="https://id.pinterest.com/pin/1138707087033828660/" target="_blank">Lihat Proyek</a></span></li>
                     </ul>
                 </div>
 
@@ -439,7 +415,7 @@
     <div class="services__container container grid">
         <div class="services__content">
         <div>
-            <i class="uil uil-web-grid services__icon"></i>
+            <i class="uil uil-globe services__icon"></i>
             <h3 class="services__tittle">Junior <br>Web Developer</h3>
         </div>
 
@@ -469,7 +445,7 @@
 
     <div class="services__content">
         <div>
-            <i class="uil uil-edit services__icon"></i>
+            <i class="uil uil-laptop services__icon"></i>
             <h3 class="services__tittle">Junior <br>Programmer</h3>
         </div>
 
@@ -500,7 +476,7 @@
 
     <div class="services__content">
         <div>
-            <i class="uil uil-book services__icon"></i>
+            <i class="uil uil-graduation-cap services__icon"></i>
             <h3 class="services__tittle">Siswi <br>RPL</h3>
         </div>
 
@@ -554,8 +530,8 @@
                     </div>
 
                     <div class="contact__card">
-                        <i class="uil uil-facebook-messenger contact__card-icon"></i>
-                        <h3 class="contact__tittle">Mesengger</h3>
+                        <i class="uil uil-instagram-alt contact__card-icon"></i>
+                        <h3 class="contact__tittle">Instagram</h3>
                         <span class="contact__card-data">etherealsani_</span>
                         
                     </div>
@@ -610,50 +586,48 @@
 
     <!--FOOTER-->
     <footer class="footer">
-        <div class="footer-bg">
-            <div class="footer__container container grid">
-                <div class="footer__lo">
-                    <h1 class="footer__tittle">Insani</h1>
-                    <span class="footer__subtittle">Software Engineering</span>
+        <div class="footer__bg">
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <div class="footer__group">
+                        <div class="footer__data">
+                            <h1 class="footer__title">Insani</h1>
+                            <p class="footer__description">Software Engineering</p>
+                        </div>
+                    </div>
 
+                    <div class="footer__group">
+                        <h3 class="footer__subtitle">Navigation</h3>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link">Beranda</a></li>
+                            <li><a href="#about" class="footer__link">Tentang</a></li>
+                            <li><a href="#skills" class="footer__link">Kemampuan</a></li>
+                            <li><a href="#work" class="footer__link">Proyek</a></li>
+                            <li><a href="#services" class="footer__link">Status</a></li>
+                            <li><a href="#contact" class="footer__link">Kontak</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__group">
+                        <h3 class="footer__subtitle">Media Sosial</h3>
+                        <div class="footer__socials">
+                            <a href="https://github.com/insani-09" target="_blank" class="footer__social" title="GitHub">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/etherealsani_/" target="_blank" class="footer__social" title="Instagram">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+                            <a href="https://wa.link/dtr96r" target="_blank" class="footer__social" title="WhatsApp">
+                                <i class="uil uil-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link" >Status</a>
-                    </li>
-
-                    <li>
-                        <a href="#skills" class="footer__link" >Kemampuan</a>
-                    </li>
-
-                    <li>
-                        <a href="#work" class="footer__link" >Proyek</a>
-                    </li>
-
-                    <li>
-                        <a href="#about" class="footer__link" >Tentang</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="footer__link" >Kontak</a>
-                    </li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href="https://github.com/etherealsani09" target="_blank" class="footer__social">
-                            <i class="uil uil-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/etherealsani_/" target="_blank" class="footer__social">
-                            <i class="uil uil-instagram-alt"></i>
-                        </a>
-                        <a href="https://wa.link/dtr96r" target="_blank" class="footer__social">
-                            <i class="uil uil-whatsapp"></i>
-                        </a>
+                <div class="footer__bottom">
+                    <p class="footer__copy">&#169; 2025 Copyright Insani Ar | Cryptical Coder. All rights reserved.</p>
                 </div>
             </div>
-
-            <p class="footer__copy">&#169; Copyright Insani Ar | Cryptical Coder</p>
         </div>
     </footer>
 
