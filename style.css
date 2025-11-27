@@ -9,9 +9,9 @@
     --hue-color:242;
 
     /*= HSL Color Mode=*/
-    --skin-color: #e1094a;
+    --skin-color: hsl(342, 92%, 46%);
     --tittle-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: #ffffff;
+    --text-color: hsl(var(--hue-color), 8%, 85%);
     --body-color: hsl(var(--hue-color), 19%, 5%);
     --box-color: hsl(var(--hue-color), 14%, 10%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 26%);
@@ -57,94 +57,17 @@
 body.dark-mode {
     --body-color: #0a0a0a;
     --box-color: #1a1a1a;
-    --tittle-color: #ffffff;
-    --text-color: #f0f0f0;
+    --tittle-color: #f0f0f0;
+    --text-color: #c0c0c0;
     --scroll-bar-color: #333;
 }
 
 body.light-mode {
-    --body-color: url('home-bg10.jpg');
-    --box-color: #f5f5f5;
-    --tittle-color: #1a1a1a;
-    --text-color: #333333;
-    --scroll-bar-color: #dddddd;
-}
-
-/* Navbar tetap dark mode di light mode */
-body.light-mode .nav,
-body.light-mode .nav__menu {
-    background: #0a0a0a;
-}
-
-body.light-mode .nav__link,
-body.light-mode .nav__logo {
-    color: #ffffff;
-}
-
-body.light-mode .nav__link:hover {
-    color: #e1094a;
-}
-
-/* Alternating section backgrounds untuk light mode */
-body.light-mode .home {
-    background: #000000;
-}
-
-body.light-mode .about {
-    background: #000000;
-}
-
-body.light-mode .qualification {
-    background: #ffffff;
-}
-
-body.light-mode .skills {
-    background: #000000;
-}
-
-body.light-mode .work {
-    background: #ffffff;
-}
-
-body.light-mode .services {
-    background: #000000;
-}
-
-body.light-mode .contact {
-    background: #ffffff;
-}
-
-body.light-mode .maps {
-    background: #000000;
-}
-
-body.light-mode .footer {
-    background: #1a1a1a;
-    color: #ffffff;
-}
-
-/* Text color adjustments untuk alternating backgrounds */
-body.light-mode .qualification,
-body.light-mode .work,
-body.light-mode .contact {
-    --tittle-color: #1a1a1a;
-    --text-color: #333333;
-    color: #333333;
-}
-
-body.light-mode .skills,
-body.light-mode .services,
-body.light-mode .maps {
-    --tittle-color: #ffffff;
-    --text-color: #f0f0f0;
-    color: #ffffff;
-}
-
-body.light-mode .home,
-body.light-mode .about {
-    --tittle-color: #ffffff;
-    --text-color: #f0f0f0;
-    color: #ffffff;
+    --body-color: var(--light-bg);
+    --box-color: var(--light-box);
+    --tittle-color: var(--light-text);
+    --text-color: #444;
+    --scroll-bar-color: #ccc;
 }
 
 /* Light mode specific adjustments */
@@ -434,56 +357,16 @@ input {
     
     /* Light mode background */
     body.light-mode .home {
-        background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('home-bg10.jpg');
+        background: linear-gradient(135deg, #f0f4f8 0%, #e0e7ff 50%, #fff5f7 100%), url('home-bg10.jpg');
+        background-blend-mode: overlay;
         background-size: cover;
         background-position: center center;
-        background-attachment: fixed;
     }
 
-    /* Dark mode home section */
-    body.dark-mode .home {
-        background: linear-gradient(135deg, rgba(10, 10, 10, 0.85) 0%, rgba(20, 20, 20, 0.85) 100%), url('home-bg10.jpg');
-        background-attachment: fixed;
-    }
-    
-    /* About Section */
-    .about {
-        padding: 2rem 0;
-    }
-    
-    /* Qualification Section */
-    .qualification {
-        padding: 2rem 0;
-    }
-    
-    /* Skills Section */
-    .skills {
-        padding: 2rem 0;
-    }
-    
-    /* Work Section */
-    .work {
-        padding: 2rem 0;
-    }
-    
-    /* Services Section */
-    .services {
-        padding: 2rem 0;
-    }
-    
-    /* Contact Section */
-    .contact {
-        padding: 2rem 0;
-    }
-    
-    /* Maps Section */
-    .maps {
-        padding: 2rem 0;
-    }
-    
-    /* Footer */
-    .footer {
-        padding: 2rem 0;
+    .home__container{
+        position: relative;
+        height: 100%;
+        align-items: center;
     }
 
     .home__social{
@@ -524,7 +407,7 @@ input {
 
     .home__social-link {
         font-size: 1.08rem;
-        color: #ffffff;
+        color: var(--text-color);
         transition: all .3s ease;
         position: relative;
         display: inline-flex;
@@ -533,14 +416,14 @@ input {
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(230, 51, 132, 0.1);
     }
 
     .home__social-link:hover {
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(230, 51, 132, 0.2);
         transform: translateY(-5px) scale(1.1);
-        color: #ffffff;
-        box-shadow: 0 4px 12px rgba(225, 9, 74, 0.3);
+        color: var(--skin-color);
+        box-shadow: 0 4px 12px rgba(230, 51, 132, 0.2);
     }
     
     @keyframes slideInLeft {
@@ -561,7 +444,7 @@ input {
     .home__tittle {
         font-size: var(--biggest-font-size);
         animation: slideInUp 0.8s ease-out 0.3s backwards;
-        background: linear-gradient(135deg, var(--tittle-color) 0%, #e1094a 100%);
+        background: linear-gradient(135deg, var(--tittle-color) 0%, var(--skin-color) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -569,7 +452,7 @@ input {
     
     /* Light mode title color */
     body.light-mode .home__tittle {
-        background: linear-gradient(135deg, #1a1a1a 0%, #e1094a 100%);
+        background: linear-gradient(135deg, #1a1a1a 0%, #e63384 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -1753,155 +1636,6 @@ textarea.input {
         height: 2.5rem;
         font-size: 1.1rem;
     }
-}
-
-/* === ALTERNATING SECTION BACKGROUNDS FOR LIGHT MODE === */
-/* Home - Black */
-body.light-mode .home {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('home-bg10.jpg');
-    background-attachment: fixed;
-}
-
-body.light-mode .home,
-body.light-mode .home * {
-    color: #ffffff;
-}
-
-/* About - Black */
-body.light-mode .about {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-body.light-mode .about__box,
-body.light-mode .about__box * {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-body.light-mode .about__heading,
-body.light-mode .about__description,
-body.light-mode .about__tittle,
-body.light-mode .about__description-number {
-    color: #ffffff;
-}
-
-/* Qualification - White */
-body.light-mode .qualification {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-body.light-mode .qualification__header,
-body.light-mode .qualification__title,
-body.light-mode .qualification__subtitle,
-body.light-mode .qualification__content-title,
-body.light-mode .qualification__subtitle {
-    color: #000000;
-}
-
-body.light-mode .qualification__content {
-    background-color: #f5f5f5;
-}
-
-/* Skills - Black */
-body.light-mode .skills {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-body.light-mode .skills__header,
-body.light-mode .skills__title,
-body.light-mode .skills__subtitle {
-    color: #ffffff;
-}
-
-body.light-mode .skills__content {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-body.light-mode .skills__name,
-body.light-mode .skills__bar {
-    color: #ffffff;
-}
-
-/* Work - White */
-body.light-mode .work {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-body.light-mode .work__title,
-body.light-mode .work__item {
-    color: #000000;
-}
-
-body.light-mode .work__card {
-    background-color: #f5f5f5;
-    color: #000000;
-}
-
-/* Services - Black */
-body.light-mode .services {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-body.light-mode .services__title,
-body.light-mode .services__subtitle {
-    color: #ffffff;
-}
-
-body.light-mode .services__content {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-body.light-mode .services__title,
-body.light-mode .services__description {
-    color: #ffffff;
-}
-
-/* Contact - White */
-body.light-mode .contact {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-body.light-mode .contact__title,
-body.light-mode .contact__subtitle,
-body.light-mode .contact__card-title {
-    color: #000000;
-}
-
-body.light-mode .contact__card {
-    background-color: #f5f5f5;
-    color: #000000;
-}
-
-/* Maps - Black */
-body.light-mode .maps {
-    background-color: #000000;
-}
-
-body.light-mode .maps .section__title,
-body.light-mode .maps .section__subtitle {
-    color: #ffffff;
-}
-
-/* Footer - Dark (to match navbar) */
-body.light-mode .footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-body.light-mode .footer__title,
-body.light-mode .footer__subtitle,
-body.light-mode .footer__link,
-body.light-mode .footer__social-link,
-body.light-mode .footer__copy {
-    color: #ffffff;
 }
 
 @media screen and (max-width: 480px) {
