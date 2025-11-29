@@ -81,22 +81,31 @@ body.light-mode .section__tittle {
     color: #1a1a1a;
 }
 
+/* Light mode home section - special styling */
+body.light-mode .home {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%), url('home-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 body.light-mode .home__social-follow {
-    color: #333;
+    color: #ffffff;
 }
 
 body.light-mode .home__social-link {
-    color: #444;
-    background: rgba(230, 51, 132, 0.12);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 body.light-mode .home__social-link:hover {
-    color: var(--skin-color);
-    background: rgba(230, 51, 132, 0.25);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(225, 9, 74, 0.3);
 }
 
 body.light-mode .work__tittle {
-    color: var(--skin-color);
+    color: #e1094a;
 }
 
 body.light-mode .services__tittle {
@@ -109,12 +118,182 @@ body.light-mode .contact__tittle {
 
 body.light-mode .button {
     color: #fff;
-    background: var(--skin-color);
-    border-color: var(--skin-color);
+    background: #e1094a;
+    border-color: #e1094a;
 }
 
 body.light-mode .button:hover {
-    background: linear-gradient(135deg, var(--skin-color), #ff1493);
+    background: linear-gradient(135deg, #e1094a, #ff1493);
+}
+
+/* Light mode alternating sections */
+body.light-mode .about {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+body.light-mode .about,
+body.light-mode .about * {
+    color: #1a1a1a;
+}
+
+body.light-mode .about__box {
+    background: linear-gradient(135deg, #ffffff 0%, rgba(225, 9, 74, 0.05) 100%);
+    color: #1a1a1a;
+    border: 1px solid rgba(225, 9, 74, 0.2);
+}
+
+body.light-mode .about__heading,
+body.light-mode .about__description {
+    color: #1a1a1a;
+}
+
+body.light-mode .qualification {
+    background-color: #f8f9fa;
+    color: #1a1a1a;
+}
+
+body.light-mode .qualification .section__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .qualification .timelane__tittle,
+body.light-mode .qualification .timelane__text {
+    color: #1a1a1a;
+}
+
+body.light-mode .skills {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+body.light-mode .skills .section__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .skills__content {
+    background: linear-gradient(135deg, #ffffff 0%, rgba(225, 9, 74, 0.05) 100%);
+    color: #1a1a1a;
+    border: 1px solid rgba(225, 9, 74, 0.1);
+}
+
+body.light-mode .skills__tittles,
+body.light-mode .skills__name {
+    color: #1a1a1a;
+}
+
+body.light-mode .work {
+    background-color: #f8f9fa;
+    color: #1a1a1a;
+}
+
+body.light-mode .work .section__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .work__item {
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border-color: #e0e0e0;
+}
+
+body.light-mode .work__item:hover,
+body.light-mode .work__item.active-work {
+    background-color: #e1094a;
+    color: #ffffff;
+}
+
+body.light-mode .work__card {
+    background: linear-gradient(135deg, #ffffff 0%, rgba(225, 9, 74, 0.08) 100%);
+    color: #1a1a1a;
+    border-color: #e0e0e0;
+}
+
+body.light-mode .work__card:hover {
+    border-color: #e1094a;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(225, 9, 74, 0.15) 100%);
+}
+
+body.light-mode .details__description {
+    color: #1a1a1a;
+}
+
+body.light-mode .services {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+body.light-mode .services .section__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .services__content {
+    background: linear-gradient(135deg, #ffffff 0%, rgba(225, 9, 74, 0.08) 100%);
+    color: #1a1a1a;
+    border: 1px solid rgba(225, 9, 74, 0.2);
+}
+
+body.light-mode .services__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .contact {
+    background-color: #f8f9fa;
+    color: #1a1a1a;
+}
+
+body.light-mode .contact .section__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .contact__card {
+    background: linear-gradient(135deg, #ffffff 0%, rgba(225, 9, 74, 0.08) 100%);
+    color: #1a1a1a;
+    border: 1px solid rgba(225, 9, 74, 0.2);
+}
+
+body.light-mode .contact__card:hover {
+    border-color: #e1094a;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(225, 9, 74, 0.15) 100%);
+}
+
+body.light-mode .contact__card-data {
+    color: #1a1a1a;
+}
+
+body.light-mode .contact__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .maps {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+body.light-mode .maps .section__tittle {
+    color: #1a1a1a;
+}
+
+body.light-mode .container-maps {
+    background-color: #f5f5f5;
+    border-color: #e0e0e0;
+}
+
+body.light-mode .container-maps h2 {
+    color: #1a1a1a;
+}
+
+body.light-mode .footer {
+    background-color: #f8f9fa;
+    color: #1a1a1a;
+}
+
+body.light-mode .footer__title,
+body.light-mode .footer__subtitle,
+body.light-mode .footer__description,
+body.light-mode .footer__link,
+body.light-mode .footer__copy {
+    color: #1a1a1a;
 }
 
     /*== RESPONSIVE TYPOGRAPHY==*/
@@ -351,16 +530,34 @@ input {
         background: url('home-bg10.jpg');
         background-size: cover;
         background-position: center center;
+        background-attachment: fixed;
         height: 100vh;
         position: relative;
     }
     
     /* Light mode background */
     body.light-mode .home {
-        background: linear-gradient(135deg, #f0f4f8 0%, #e0e7ff 50%, #fff5f7 100%), url('home-bg10.jpg');
-        background-blend-mode: overlay;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%), url('home-bg.jpg');
         background-size: cover;
         background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    /* Light mode home text color - putih untuk contrast */
+    body.light-mode .home,
+    body.light-mode .home__tittle,
+    body.light-mode .home__subtittle,
+    body.light-mode .home__description,
+    body.light-mode .home__social-follow {
+        color: #ffffff;
+    }
+    
+    /* Light mode home title gradient - putih ke skin color */
+    body.light-mode .home__tittle {
+        background: linear-gradient(135deg, #ffffff 0%, #e1094a 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .home__container{
@@ -452,7 +649,7 @@ input {
     
     /* Light mode title color */
     body.light-mode .home__tittle {
-        background: linear-gradient(135deg, #1a1a1a 0%, #e63384 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #e1094a 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -476,7 +673,7 @@ input {
     
     /* Light mode text color */
     body.light-mode .home__description {
-        color: #333;
+        color: #ffffff;
     }
     
     @keyframes slideInUp {
